@@ -1,0 +1,15 @@
+<boxes.SpriteSheetProperties>
+  <SheetDimensions>
+    <X>1</X>
+    <Y>1</Y>
+  </SheetDimensions>
+  <TextureCoordMap>
+    <entry>
+      <boxes.EnumEntityId>ENTITY_TREE</boxes.EnumEntityId>
+      <boxes.Coords2dI>
+        <X>0</X>
+        <Y>0</Y>
+      </boxes.Coords2dI>
+    </entry>
+  </TextureCoordMap>
+</boxes.SpriteSheetProperties>
