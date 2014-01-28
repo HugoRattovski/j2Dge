@@ -5,7 +5,7 @@ import static org.lwjgl.opengl.GL11.*;
 public class Tile {
 
     private EnumTextureId textureId;
-    private SubTextureCoords textureCoords;
+    private SubTextureCoordsD textureCoords;
 
     public Tile(EnumTextureId textureId, SpriteSheet spriteSheet) {
         this.textureId = textureId;

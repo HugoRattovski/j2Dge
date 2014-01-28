@@ -13,10 +13,12 @@
             <boxes.FrameSequence>
               <TimeMs>0</TimeMs>
               <FrameCoords>
-                <boxes.Coords2dI>
+                <boxes.SubTextureCoordsI>
                   <X>0</X>
                   <Y>0</Y>
-                </boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
               </FrameCoords>
             </boxes.FrameSequence>
           </entry>
@@ -32,10 +34,12 @@
             <boxes.FrameSequence>
               <TimeMs>0</TimeMs>
               <FrameCoords>
-                <boxes.Coords2dI>
+                <boxes.SubTextureCoordsI>
                   <X>1</X>
                   <Y>0</Y>
-                </boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
               </FrameCoords>
             </boxes.FrameSequence>
           </entry>
@@ -51,10 +55,12 @@
             <boxes.FrameSequence>
               <TimeMs>0</TimeMs>
               <FrameCoords>
-                <boxes.Coords2dI>
+                <boxes.SubTextureCoordsI>
                   <X>2</X>
                   <Y>0</Y>
-                </boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
               </FrameCoords>
             </boxes.FrameSequence>
           </entry>
@@ -70,106 +76,641 @@
             <boxes.FrameSequence>
               <TimeMs>2000</TimeMs>
               <FrameCoords>
-                <boxes.Coords2dI>
+                <boxes.SubTextureCoordsI>
                   <X>0</X>
                   <Y>1</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>1</X>
                   <Y>1</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>2</X>
                   <Y>1</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>3</X>
                   <Y>1</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>4</X>
                   <Y>1</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>0</X>
                   <Y>2</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>1</X>
                   <Y>2</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>2</X>
                   <Y>2</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>3</X>
                   <Y>2</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>4</X>
                   <Y>2</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>0</X>
                   <Y>3</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>1</X>
                   <Y>3</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>2</X>
                   <Y>3</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>3</X>
                   <Y>3</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>4</X>
                   <Y>3</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>0</X>
                   <Y>4</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>1</X>
                   <Y>4</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>2</X>
                   <Y>4</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>3</X>
                   <Y>4</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>4</X>
                   <Y>4</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>0</X>
                   <Y>5</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>1</X>
                   <Y>5</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>2</X>
                   <Y>5</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>3</X>
                   <Y>5</Y>
-                </boxes.Coords2dI>
-                <boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
                   <X>4</X>
                   <Y>5</Y>
-                </boxes.Coords2dI>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+        </Sequences>
+      </boxes.FrameAnimation>
+    </entry>
+    <entry>
+      <boxes.EnumFrameAnimationId>ANIM_PONY</boxes.EnumFrameAnimationId>
+      <boxes.FrameAnimation>
+        <Sequences>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_IDLE</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>0</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>4</X>
+                  <Y>0</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_IDLE_NORTH</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>0</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_IDLE_SOUTH</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>0</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>4</X>
+                  <Y>0</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_IDLE_EAST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>0</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>6</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_IDLE_WEST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>0</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>6</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_IDLE_NORTHEAST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>0</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>6</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_IDLE_SOUTHEAST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>0</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_IDLE_SOUTHWEST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>0</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_IDLE_NORTHWEST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>0</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>6</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_WALK_NORTH</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>1000</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>0</X>
+                  <Y>6</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>1</X>
+                  <Y>6</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>2</X>
+                  <Y>6</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>3</X>
+                  <Y>6</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>4</X>
+                  <Y>6</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>5</X>
+                  <Y>6</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_WALK_SOUTH</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>1000</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>5</X>
+                  <Y>0</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>5</X>
+                  <Y>1</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>5</X>
+                  <Y>2</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>5</X>
+                  <Y>3</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>5</X>
+                  <Y>4</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>5</X>
+                  <Y>5</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_WALK_EAST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>1000</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>0</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>1</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>2</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>3</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>4</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>5</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_WALK_WEST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>1000</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>0</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>1</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>2</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>3</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>4</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>5</X>
+                  <Y>7</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_WALK_NORTHEAST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>1000</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>0</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>1</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>2</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>3</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>4</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>5</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_WALK_SOUTHEAST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>1000</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>0</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>1</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>2</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>3</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>4</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>5</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>false</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_WALK_NORTHWEST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>1000</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>0</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>1</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>2</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>3</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>4</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>6</X>
+                  <Y>5</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+              </FrameCoords>
+            </boxes.FrameSequence>
+          </entry>
+          <entry>
+            <boxes.EnumFrameSequenceId>SEQ_WALK_SOUTHWEST</boxes.EnumFrameSequenceId>
+            <boxes.FrameSequence>
+              <TimeMs>1000</TimeMs>
+              <FrameCoords>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>0</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>1</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>2</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>3</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>4</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
+                <boxes.SubTextureCoordsI>
+                  <X>7</X>
+                  <Y>5</Y>
+                  <flippedHorizontally>false</flippedHorizontally>
+                  <flippedVertically>true</flippedVertically>
+                </boxes.SubTextureCoordsI>
               </FrameCoords>
             </boxes.FrameSequence>
           </entry>

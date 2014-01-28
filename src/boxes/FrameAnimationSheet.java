@@ -6,8 +6,8 @@ import org.newdawn.slick.opengl.Texture;
 public class FrameAnimationSheet {
 
     private String sourceFilename;
-    public Texture SheetTexture;
-    public FrameAnimationData Animations;
+    private Texture SheetTexture;
+    private FrameAnimationData Animations;
     private double fractionX, fractionY;
 
     /*
@@ -53,8 +53,36 @@ public class FrameAnimationSheet {
         }
     }
 
-    public SubTextureCoords getSubTextureCoordsByIds(EnumFrameAnimationId animId, EnumFrameSequenceId seqId, long delta) {
-        Coords2dI spriteCoords = this.getAnimationById(animId).getSequence(seqId).getFrameCoords(delta);
-        return new SubTextureCoords(fractionX * spriteCoords.X, fractionY * spriteCoords.Y, fractionX * (spriteCoords.X + 1), fractionY * (spriteCoords.Y + 1));
+    public void bindTexture() {
+        this.SheetTexture.bind();
+    }
+
+    public SubTextureCoordsD getSubTextureCoordsByIds(EnumFrameAnimationId animId, EnumFrameSequenceId seqId, long delta) {
+        SubTextureCoordsI spriteCoords = this.getAnimationById(animId).getSequence(seqId).getFrameCoords(delta);
+        if (spriteCoords.flippedHorizontally) {
+            if (spriteCoords.flippedVertically) {
+                return new SubTextureCoordsD(fractionX * (spriteCoords.X + 1), fractionY * (spriteCoords.Y + 1), fractionX * spriteCoords.X, fractionY * spriteCoords.Y);
+            }
+            else {
+                return new SubTextureCoordsD(fractionX * spriteCoords.X, fractionY * (spriteCoords.Y + 1), fractionX * (spriteCoords.X + 1), fractionY * spriteCoords.Y);
+            }
+        }
+        else {
+            if (spriteCoords.flippedVertically) {
+                return new SubTextureCoordsD(fractionX * (spriteCoords.X + 1), fractionY * spriteCoords.Y, fractionX * spriteCoords.X, fractionY * (spriteCoords.Y + 1));
+            }
+            else {
+                return new SubTextureCoordsD(fractionX * spriteCoords.X, fractionY * spriteCoords.Y, fractionX * (spriteCoords.X + 1), fractionY * (spriteCoords.Y + 1));
+            }
+        }
+
+    }
+
+    public int getSequenceDuration(EnumFrameAnimationId animId, EnumFrameSequenceId seqId) {
+        return this.getAnimationById(animId).getSequence(seqId).TimeMs;
+    }
+
+    public boolean sequenceExists(EnumFrameAnimationId animId, EnumFrameSequenceId seqId) {
+        return this.getAnimationById(animId).Sequences.containsKey(seqId);
     }
 }

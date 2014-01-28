@@ -2,7 +2,7 @@ package boxes;
 
 import java.util.ArrayList;
 
-public class EntityContainer extends EntityBase {
+public class EntityContainer extends EntityBase implements IDrawableEntity {
 
     private int maxCapacity;
     private ArrayList<EntityBase> containedEntities;

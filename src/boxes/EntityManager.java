@@ -23,6 +23,15 @@ public class EntityManager {
         return this.allEntities.remove(entity);
     }
 
+    public int updateAllEntities(long timeDelta){
+        int entityCount = 0;
+        for (IDrawableEntity entity : this.allEntities) {
+            entity.update(timeDelta);
+            entityCount++;
+        }
+        return entityCount;
+    }
+
     public int drawAllEntities(int shiftX, int shiftY, int displayX, int displayY, double zoom, long timeDelta) {
         int entityCount = 0;
         int halfZoomedBaseSize = (int) (entityBaseSize * zoom * 0.5f);
@@ -31,8 +40,8 @@ public class EntityManager {
         int maxX = (int) ((double) displayX / zoom + shiftX) + halfZoomedBaseSize;
         int maxY = (int) ((double) displayY / zoom + shiftY) + halfZoomedBaseSize;
 
-        this.animationSpriteSheet.SheetTexture.bind();
-        for (EntityBase entity : this.allEntities) {
+        this.animationSpriteSheet.bindTexture();
+        for (IDrawableEntity entity : this.allEntities) {
             Coords2dI position = entity.getScaledWorldPosition(this.entityBaseSize);
             if (entity.Visible && (minX <= position.X) && (maxX >= position.X) && (minY <= position.Y) && (maxY >= position.Y)) {
                 entityCount++;

@@ -9,7 +9,7 @@ public class SpriteSheet {
     private String sourceFilename;
     public Texture sheetTexture;
     private SpriteSheetProperties sheetProperties;
-    private HashMap<EnumTextureId, SubTextureCoords> subtextureCoordMap;
+    private HashMap<EnumTextureId, SubTextureCoordsD> subtextureCoordMap;
 
     /*
      * Define a new sprite sheet. It will be initialized
@@ -37,12 +37,12 @@ public class SpriteSheet {
         this.subtextureCoordMap = new HashMap<>();
         for (Map.Entry<EnumTextureId, Coords2dI> entry : this.sheetProperties.TextureCoordMap.entrySet()) {
             Coords2dI spriteCoords = entry.getValue();
-            this.subtextureCoordMap.put(entry.getKey(), new SubTextureCoords(fractionX * spriteCoords.X, fractionY * spriteCoords.Y,
+            this.subtextureCoordMap.put(entry.getKey(), new SubTextureCoordsD(fractionX * spriteCoords.X, fractionY * spriteCoords.Y,
                     fractionX * (spriteCoords.X + 1), fractionY * (spriteCoords.Y + 1)));
         }
     }
 
-    public SubTextureCoords getSubTextureCoords(EnumTextureId textureId) {
+    public SubTextureCoordsD getSubTextureCoords(EnumTextureId textureId) {
         if (this.subtextureCoordMap.containsKey(textureId)) {
             return this.subtextureCoordMap.get(textureId);
         }

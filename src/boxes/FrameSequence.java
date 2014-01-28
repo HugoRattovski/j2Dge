@@ -4,14 +4,14 @@ public class FrameSequence {
 
     public int TimeMs;
     public int FrameCount;
-    public Coords2dI[] FrameCoords;
+    public SubTextureCoordsI[] FrameCoords;
     private float singleFrameFraction;
 
     public void init() {
         this.singleFrameFraction = (float) this.TimeMs / this.FrameCoords.length;
     }
 
-    public Coords2dI getFrameCoords(long delta) {
+    public SubTextureCoordsI getFrameCoords(long delta) {
         if (this.TimeMs != 0) {
             long animationTime = delta % this.TimeMs;
             return this.FrameCoords[(int) (animationTime / singleFrameFraction)];

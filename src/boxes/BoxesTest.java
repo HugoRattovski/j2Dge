@@ -14,8 +14,8 @@ import static org.lwjgl.opengl.GL11.*;
 public class BoxesTest {
 
     // statics
-    private static final int DISPLAY_WIDTH = 500;
-    private static final int DISPLAY_HEIGHT = 300;
+    private static final int DISPLAY_WIDTH = 1280;
+    private static final int DISPLAY_HEIGHT = 720;
     private static final int DISPLAY_SYNC_RATE = 60;
     private static final int BASE_TILE_SIZE = 80;
     // X,Y-position
@@ -34,8 +34,10 @@ public class BoxesTest {
     // textures
     private OpenGlFont font;
     private SpriteSheet tileSpriteSheet;
-    private SpriteSheet entitySpriteSheet;
     private FrameAnimationSheet entityAnimationSheet;
+    // tmp
+    private EntityMoveable entity;
+    private boolean keyPressed = false;
 
     public static void main(String[] args) {
         BoxesTest boxTest;
@@ -65,7 +67,6 @@ public class BoxesTest {
 //        GameUtils.writeObjectToXmlFile(animData, "AnimationSpriteSheetData.xml");
         // load external files
         this.tileSpriteSheet = new SpriteSheet("res/BackgroundSpriteSheet");
-        this.entitySpriteSheet = new SpriteSheet("res/EntitySpriteSheet");
         this.entityAnimationSheet = new FrameAnimationSheet("res/AnimationSpriteSheetData");
 
         // create display
@@ -100,7 +101,6 @@ public class BoxesTest {
 
         // load texture data from HDD
         this.tileSpriteSheet.initSheet();
-        this.entitySpriteSheet.initSheet();
         this.entityAnimationSheet.initSheet();
         this.font = new OpenGlFont("res/font.png", "res/fontCharWidths.xml");
 
@@ -116,22 +116,26 @@ public class BoxesTest {
                 }
             }
         }
-        this.entityManager.addEntity(new EntityBase(0.5d, 0.5d, EnumEntityId.ENTITY_TREE, EnumFrameAnimationId.ANIM_CHEST_01));
+        this.entity = new EntityMoveable(0.5d, 0.5d, EnumEntityId.ENTITY_TREE, EnumFrameAnimationId.ANIM_PONY);
+        this.entity.setAcceleration(0.5d);
+        this.entity.setMaxTurnSpeedDeg(30);
+        this.entityManager.addEntity(entity);
         this.entityManager.addEntity(new EntityBase(1.5d, 0.5d, EnumEntityId.ENTITY_TREE, EnumFrameAnimationId.ANIM_FIREBALL));
     }
 
     private void run() {
         // init frame counter and delta counter before loop
         long delta = 0;
-        lastFpsTimeStamp = getTime();
-        lastFrameTimeStamp = getTime();
+        this.lastFpsTimeStamp = getTime();
+        this.lastFrameTimeStamp = getTime();
         // main loop
         while (!Display.isCloseRequested()) {
             // process input
             processKeyboard();
             processMouse();
             // get delta time to last frame
-            delta = getTime() - lastFrameTimeStamp;
+            delta = getTime() - this.lastFrameTimeStamp;
+            this.lastFrameTimeStamp = getTime();
             // update game state (selection, orders etc)
             updateGameState(delta);
             // render new game state
@@ -145,17 +149,51 @@ public class BoxesTest {
     }
 
     private void processKeyboard() {
+        boolean keyDown = false;
         if (Keyboard.isKeyDown(Keyboard.KEY_UP)) {
-            this.renderShift.Y -= BASE_TILE_SIZE;
+            keyDown = true;
+            if (!this.keyPressed) {
+                this.entity.setTargetSpeed(1);
+                this.keyPressed = true;
+            }
+//            this.renderShift.Y -= BASE_TILE_SIZE;
         }
         if (Keyboard.isKeyDown(Keyboard.KEY_DOWN)) {
-            this.renderShift.Y += BASE_TILE_SIZE;
+            keyDown = true;
+            if (!this.keyPressed) {
+                this.entity.setTargetSpeed(0);
+                this.keyPressed = true;
+            }
+//            this.renderShift.Y += BASE_TILE_SIZE;
         }
         if (Keyboard.isKeyDown(Keyboard.KEY_LEFT)) {
-            this.renderShift.X += BASE_TILE_SIZE;
+            keyDown = true;
+            if (!this.keyPressed) {
+                if (this.entity.getDirectionRad() > 0.3d) {
+                    this.entity.setDirectionRad(this.entity.getDirectionRad() - 0.3d);
+                }
+                else {
+                    this.entity.setDirectionRad(this.entity.getDirectionRad() - 0.3d + 2 * Math.PI);
+                }
+                this.keyPressed = true;
+            }
+//            this.renderShift.X += BASE_TILE_SIZE;
         }
         if (Keyboard.isKeyDown(Keyboard.KEY_RIGHT)) {
-            this.renderShift.X -= BASE_TILE_SIZE;
+            keyDown = true;
+            if (!this.keyPressed) {
+                if (this.entity.getDirectionRad() + 0.3d < 2 * Math.PI) {
+                    this.entity.setDirectionRad(this.entity.getDirectionRad() + 0.3d);
+                }
+                else {
+                    this.entity.setDirectionRad(this.entity.getDirectionRad() + 0.3d - 2 * Math.PI);
+                }
+                this.keyPressed = true;
+            }
+//            this.renderShift.X -= BASE_TILE_SIZE;
+        }
+        if (!keyDown) {
+            this.keyPressed = false;
         }
     }
 
@@ -211,9 +249,10 @@ public class BoxesTest {
         glClear(GL_COLOR_BUFFER_BIT);// | GL_DEPTH_BUFFER_BIT);
         // draw field
         int boxCount = this.field.draw(this.renderShift.X, this.renderShift.Y, DISPLAY_WIDTH, DISPLAY_HEIGHT, this.renderZoomFactorCurrent);
-        int entityCount = this.entityManager.drawAllEntities(this.renderShift.X, this.renderShift.Y, DISPLAY_WIDTH, DISPLAY_HEIGHT, this.renderZoomFactorCurrent, timeDelta);
+        int entityUpdateCount = this.entityManager.updateAllEntities(timeDelta);
+        int entityDrawCount = this.entityManager.drawAllEntities(this.renderShift.X, this.renderShift.Y, DISPLAY_WIDTH, DISPLAY_HEIGHT, this.renderZoomFactorCurrent, timeDelta);
         String boxString = "Tiles: " + String.valueOf(boxCount);
-        String entityString = "Entities: " + String.valueOf(entityCount);
+        String entityString = "Entities: " + String.valueOf(entityDrawCount) + "/" + String.valueOf(entityUpdateCount);
         this.font.draw(boxString, DISPLAY_WIDTH - this.font.calculateWidth(boxString, 20) - 30, DISPLAY_HEIGHT - 40, 20);
         this.font.draw(entityString, DISPLAY_WIDTH - this.font.calculateWidth(entityString, 20) - 30, DISPLAY_HEIGHT - 60, 20);
     }

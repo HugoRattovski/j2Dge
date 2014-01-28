@@ -6,12 +6,12 @@ public class FrameAnimation {
 
     public HashMap<EnumFrameSequenceId, FrameSequence> Sequences;
 
-    public FrameSequence getSequence(EnumFrameSequenceId id){
+    public FrameSequence getSequence(EnumFrameSequenceId id) {
         FrameSequence tmpSeq = this.Sequences.get(id);
-        if (tmpSeq != null){
+        if (tmpSeq != null) {
             return tmpSeq;
         }
-        else{
+        else {
             return this.Sequences.get(EnumFrameSequenceId.SEQ_IDLE);
         }
     }
